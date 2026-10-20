@@ -10,7 +10,7 @@ class Player : public GenericPlayer {
 
 public:
 
-    Player(const string& name = "");
+    Player(const string& name = " ");
 
     virtual ~Player();
 
@@ -21,9 +21,6 @@ public:
     void lose() const;
 
     void push() const;
-
-    friend ostream& operator<<(ostream& output, const Player& Player) {
-    }
 
 };
 

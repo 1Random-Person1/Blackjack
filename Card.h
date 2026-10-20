@@ -18,6 +18,8 @@ public:
 
     void flip();
 
+    friend ostream& operator<<(ostream& os, const Card& aCard);
+
 protected:
 
     RANK rank;

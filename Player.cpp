@@ -10,16 +10,16 @@ Player::~Player() {
 
 bool Player::isHitting() const {
 
-    cout << getName() << " do you want to hit? Y or N" << endl;
-
     char response;
-    cin >> response;
 
-    if (response == 'Y') {
-        return true;
-    } else {
-        return false;
+    while (response != 'Y' && response != 'y' && response != 'n' && response != 'N') {
+
+        cout << getName() << " do you want to hit? Y or N" << endl;
+        cin >> response;
+
     }
+
+    return (response == 'Y' || response == 'y');
 
 }
 
@@ -32,5 +32,5 @@ void Player::lose() const {
 }
 
 void Player::push() const {
-    cout << getName() << " has pushed" << endl;
+    cout << getName() << " has pushes" << endl;
 }

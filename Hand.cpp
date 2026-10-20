@@ -36,7 +36,7 @@ int Hand :: getTotal() const {
     vector<Card*> :: const_iterator iter;
     int total = 0;
     for (iter = cardVector.begin(); iter != cardVector.end(); ++iter) {
-        total = (*iter)->getValue();
+        total += (*iter)->getValue();
     }
 
     for (iter = cardVector.begin(); iter != cardVector.end(); ++iter) {

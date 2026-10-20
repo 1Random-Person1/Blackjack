@@ -10,11 +10,7 @@ House::~House() {
 
 bool House::isHitting() const {
 
-    if (getTotal() <= 16) {
-        return true;
-    } else {
-        return false;
-    }
+    return getTotal() <= 16;
 
 }
 

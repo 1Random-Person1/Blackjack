@@ -24,8 +24,7 @@ public:
 
     void setName(const string& name);
 
-    friend ostream& operator<<(ostream& output, const GenericPlayer& aGenericPlayer) {
-    }
+    friend ostream& operator<<(ostream& os, const GenericPlayer& aGenericPlayer);
 
 private:
 

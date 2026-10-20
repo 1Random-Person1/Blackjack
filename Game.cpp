@@ -14,6 +14,9 @@ Game::~Game() {
 
 void Game::play() {
 
+    deck.populate();
+    deck.shuffle();
+
     for (int i = 0; i < 2; i++) {
         deck.deal(player);
         deck.deal(house);
@@ -21,14 +24,14 @@ void Game::play() {
 
     house.flipFirstCard();
 
-    cout << player << endl;
+    cout << endl << player << endl;
     cout << house << endl;
 
     deck.additionalCards(player);
 
     house.flipFirstCard();
 
-    cout << house << endl;
+    cout << endl << house << endl;
 
     deck.additionalCards(house);
 
