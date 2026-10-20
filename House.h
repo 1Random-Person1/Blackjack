@@ -16,7 +16,7 @@ public:
 
     virtual bool isHitting() const;
 
-    void bool flipFirstCard() const;
+    void flipFirstCard() const;
 
 };
 

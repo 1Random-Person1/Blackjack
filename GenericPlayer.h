@@ -3,6 +3,7 @@
 
 #include <iostream>;
 #include <string>;
+#include "Hand.h"
 using namespace std;
 
 class GenericPlayer : public Hand {
