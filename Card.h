@@ -12,7 +12,7 @@ public:
 
     enum SUIT {CLUBS, DIAMONDS, HEARTS, SPADES};
 
-    Card(RANK rank = ACE, SUIT suit = SPADES, bool isUp = true);
+    Card(RANK rank = ACE, SUIT suit = SPADES, bool isFaceUp = true);
 
     int getValue() const;
 
