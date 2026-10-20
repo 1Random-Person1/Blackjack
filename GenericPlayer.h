@@ -24,6 +24,10 @@ public:
 
     void setName(const string& name);
 
+    friend ostream& operator<<(ostream& output, const GenericPlayer& aGenericPlayer) {
+
+    }
+
 private:
 
     string name;

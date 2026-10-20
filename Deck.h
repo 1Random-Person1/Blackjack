@@ -3,9 +3,10 @@
 
 #include <iostream>;
 #include "Hand.h"
+#include "GenericPlayer.h"
 using namespace std;
 
-class GenericPLayer;
+class GenericPlayer;
 
 class Deck : public Hand {
 
@@ -21,7 +22,7 @@ public:
 
     void deal(Hand& aHand);
 
-    void additionalCards(GenericPLayer& aGenericPLayer);
+    void additionalCards(GenericPlayer& aGenericPlayer);
 
 };
 
