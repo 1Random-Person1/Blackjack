@@ -15,8 +15,8 @@ void Deck::populate() {
 
     clearHand();
 
-    for (int r = Card::ACE; r <= Card::KING; ++r ) {
-        for (int s = Card::CLUBS; s <= Card::SPADES; ++s) {
+    for (int r = Card::ACE; r <= Card::KING; r++ ) {
+        for (int s = Card::CLUBS; s <= Card::SPADES; s++) {
             add(new Card(static_cast<Card::RANK>(r), static_cast<Card::SUIT>(s)));
         }
     }

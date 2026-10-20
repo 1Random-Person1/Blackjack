@@ -22,6 +22,9 @@ public:
 
     void push() const;
 
+    friend ostream& operator<<(ostream& output, const Player& Player) {
+    }
+
 };
 
 

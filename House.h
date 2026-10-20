@@ -18,6 +18,9 @@ public:
 
     void flipFirstCard() const;
 
+    friend ostream& operator<<(ostream& output, const House& House) {
+    }
+
 };
 
 
